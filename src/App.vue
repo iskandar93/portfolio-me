@@ -15,6 +15,7 @@ export default {
 	},
 	mounted() {
 		feather.replace();
+		// console.log('called')
 	},
 	updated() {
 		feather.replace();
