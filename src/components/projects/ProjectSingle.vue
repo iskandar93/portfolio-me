@@ -1,6 +1,10 @@
 <script>
 export default {
 	props: ['project'],
+
+	mounted() {
+		console.log('project', this.project)
+	}
 };
 </script>
 

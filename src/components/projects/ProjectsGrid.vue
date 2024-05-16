@@ -1,11 +1,11 @@
 <script>
 import feather from 'feather-icons';
-import ProjectsFilter from './ProjectsFilter.vue';
+// import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
 import projects from '../../data/projects';
 
 export default {
-	components: { ProjectSingle, ProjectsFilter },
+	components: { ProjectSingle },
 	data: () => {
 		return {
 			projects,
@@ -62,7 +62,7 @@ export default {
 
 		<!-- Filter and search projects -->
 		<div class="mt-10 sm:mt-10">
-			<h3
+			<!-- <h3
 				class="font-general-regular
 					text-center text-secondary-dark
 					dark:text-ternary-light
@@ -73,7 +73,7 @@ export default {
 				"
 			>
 				Search projects by title or filter by category
-			</h3>
+			</h3> -->
 			<div
 				class="
 					flex
@@ -84,7 +84,7 @@ export default {
 					gap-2
 				"
 			>
-				<div class="flex justify-between gap-2">
+				<!-- <div class="flex justify-between gap-2">
 					<span
 						class="
 							hidden
@@ -126,8 +126,8 @@ export default {
 						placeholder="Search Projects"
 						aria-label="Name"
 					/>
-				</div>
-				<ProjectsFilter @filter="selectedCategory = $event" />
+				</div> -->
+				<!-- <ProjectsFilter @filter="selectedCategory = $event" /> -->
 			</div>
 		</div>
 
